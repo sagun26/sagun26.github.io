@@ -1,0 +1,10 @@
+{
+  "softSkills": ["Team Management", "Leadership"],
+  "languages": ["Nepali", "English", "Hindi"],
+  "technicalSkills": {
+    "Backend / Frameworks": ["PHP", "Laravel","Python"],
+    "Frontend": ["Tailwind CSS", "Bootstrap", "JavaScript", "React.js", "Blade"],
+    "Databases": ["MySQL"],
+    "DevOps / Cloud": [ "Linux"]
+    }
+}
