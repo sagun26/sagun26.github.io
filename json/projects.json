@@ -8,7 +8,7 @@
     "level":1,
     "image": "/assets/img/projects/logo.jpg",
     "role": "Fullstack Developer",
-    "teamSize": 3,
+    "teamSize": 2,
     "description": "A web-based e-commerce platform that enables local producers and artisans to sell their products online, allowing buyers to easily discover and purchase locally available goods while supporting local businesses.",
     "responsibilities": [
       "Developed full-stack features for a local product marketplace, including user authentication and role-based access for buyers, producers, and artisans",
