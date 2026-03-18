@@ -240,7 +240,7 @@ function sendEmail(event) {
   event.preventDefault(); // Prevent the form from submitting the traditional way
 
   // Get the values from the inputs
-  var recipient = "darshanbahadurchhetri@gmail.com";
+  var recipient = "sagunsidgel6@gmail.com";
   var name = document.getElementById("name").value;
   var subject = document.getElementById("subject").value;
   var message = document.getElementById("message").value;
