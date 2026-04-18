@@ -1,21 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-68ES68LMVJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-68ES68LMVJ');
-</script>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Sagun Sigdel - Web Developer Portfolio</title>
-
-
-    <!-- Meta Description -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAGUN SIGDEL — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+   <!-- Meta Description -->
     <meta
       name="description"
       content="Portfolio of Sagun Sigdel, a  web developer specializing in PHP, Laravel, and modern web technologies."
@@ -26,19 +19,7 @@
       name="keywords"
       content="Sagun Sigdel, full stack developer, web developer, Python developer, portfolio, freelancer, Nepal"
     />
-
-    <!-- Favicons -->
-    <link href="assets/img/favicon-32x32.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-   <!-- Canonical Link  -->
+<!-- Canonical Link  -->
       <link rel="canonical" href="https://sagunsigdel.com.np/">
 <!-- meta robots-->
       <meta name="robots" content="index, follow">
@@ -50,9 +31,9 @@
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Sagun Sigdel",
-        "alternateName": "Sagun Sigdel",
+        "alternateName": "Sagunaa",
         "url": "https://sagunsigdel.com.np",
-        "image": "https://sagunsigdel.com.np/assets/img/profile.jpg",
+        "image": "https://sagunsigdel.com.np/sagunaa.jpg",
         "description": "Sagun Sigdel is a Web Developer skilled in HTML, CSS, JS, React, Python, Django, Tailwind, Bootstrap, MySQL, PostgreSQL.",
         "sameAs": [
           "https://github.com/sagun26",
@@ -67,523 +48,528 @@
       }
     </script>
 
-    <!-- Vendor CSS Files -->
-    <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-    <link
-      href="assets/vendor/glightbox/css/glightbox.min.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+</head>
+<body>
 
-    <!-- Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet" />
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-ring"></div>
+      <span class="preloader-text">ac</span>
+    </div>
+  </div>
 
-    <!-- JQuery Link -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  </head>
+  <!-- Scroll to Top -->
+  <button id="scroll-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
 
-  <body class="index-page">
-    <header
-      id="header"
-      class="header d-flex flex-column justify-content-center"
-    >
-      <i class="header-toggle d-xl-none bi bi-list"></i>
+  <!-- ═══════════ NAVBAR ═══════════ -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">sagun's logo<span>.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#timeline" class="nav-link">Journey</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li>
-            <a href="#hero" class="active">
-              <i class="bi bi-house-door navicon"></i>
-              <span>Home</span>
-            </a>
-          </li>
-          <li>
-            <a href="#about">
-              <i class="bi bi-person navicon"></i>
-              <span>About</span>
-            </a>
-          </li>
-          <li>
-            <a href="#skills">
-              <i class="bi bi-bar-chart-line-fill navicon"></i>
-              <span>Skills</span>
-            </a>
-          </li>
-          <li>
-            <a href="#resume">
-              <i class="bi bi-file-earmark-text navicon"></i>
-              <span>Resume</span>
-            </a>
-          </li>
-          <li>
-            <a href="#project">
-              <i class="bi bi-images navicon"></i>
-              <span>Projects</span>
-            </a>
-          </li>
-          <li>
-            <a href="#contact">
-              <i class="bi bi-envelope navicon"></i>
-              <span>Contact</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+  <main>
 
-    <main class="main">
-      <!-- Hero Section -->
-      <section id="hero" class="hero section light-background">
-        <img src="assets/img/portfolio_background.jpg" alt="" />
-
-        <div class="container" data-aos="zoom-out">
-          <div class="row justify-content-center">
-            <div class="col-lg-9">
-              <h2><strong>Sagun Sigdel</strong></h2>
-              <p>
-                I'm
-                <span
-                  class="typed"
-                  data-typed-items="Learner, Student, Developer, Freelancer"
-                  >Learner</span
-                ><span
-                  class="typed-cursor typed-cursor--blink"
-                  aria-hidden="true"
-                ></span>
-              </p>
-              <div class="social-links">
-                <a href="https://github.com/sagun26" target="_blank"
-                  ><i class="bi bi-github"></i
-                ></a>
-                <a
-                  href="https://www.linkedin.com/in/sagun-sigdel/"
-                  target="_blank"
-                  ><i class="bi bi-linkedin"></i
-                ></a>
-                <a href="https://sagunsigdel.com.np" target="_blank"
-                  ><i class="bi bi-globe"></i
-                ></a>
-              </div>
-            </div>
-          </div>
+    <!-- ═══════════ HERO ═══════════ -->
+    <section id="hero">
+      <div class="hero-bg-orb orb-1"></div>
+      <div class="hero-bg-orb orb-2"></div>
+      <div class="hero-bg-orb orb-3"></div>
+      <div class="floating-dots">
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+      </div>
+      <div class="hero-content">
+        <p class="hero-greeting hero-animate" style="--delay:.1s">Hello, I'm</p>
+        <h1 class="hero-name hero-animate" style="--delay:.25s">SAGUN SIGDEL</h1>
+        <div class="hero-role hero-animate" style="--delay:.45s">
+          <span class="role-prefix">I build </span>
+          <span class="typing-wrapper">
+            <span id="typed-text"></span><span class="cursor">|</span>
+          </span>
         </div>
-      </section>
-      <!-- /Hero Section -->
-
-      <!-- About Section -->
-      <section id="about" class="about section">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>About</h2>
-        </div>
-        <!-- End Section Title -->
-
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row gy-4 justify-content-center">
-            <div class="col-lg-4">
-              <img
-                src="assets/img/profile.png"
-                class="img-fluid"
-                alt="profile"
-              />
-            </div>
-            <div class="col-lg-8 content">
-              <h2>Web Developer.</h2>
-              <p class="fst-italic py-3">
-                I am passionate about developing websites and web apps. I am a
+        <p class="hero-bio hero-animate" style="--delay:.6s">
+         I am passionate about developing websites and web apps. I am a
                web developer with knowledge of PHP,
                 Laravel, Git, HTML, CSS, JavaScript, jQuery, Bootstrap,
                 Tailwind, MySQL, and ORM.
-              </p>
-              <div class="row">
-                <div class="col-lg-6">
-                  <ul>
-                    <li>
-                      <i class="bi bi-chevron-right"></i>
-                      <strong>Birthday:</strong> <span>2004</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-chevron-right"></i>
-                      <strong>Website:</strong>
-                      <span>sagunsigdel.com.np</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-chevron-right"></i>
-                      <strong>Phone:</strong> <span>+977 98******41</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-chevron-right"></i>
-                      <strong>City:</strong> <span>Gandaki, Nepal</span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-lg-6">
-                  <ul>
-                    <li>
-                      <i class="bi bi-chevron-right"></i> <strong>Age:</strong>
-                      <span>23</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-chevron-right"></i>
-                      <strong>Degree:</strong> <span>Bachelor Degree</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-chevron-right"></i>
-                      <strong>Email:</strong>
-                      <span>sag*****del6@gmail.com</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-chevron-right"></i>
-                      <strong>Freelance:</strong> <span>Available</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+               </p>
+        <div class="hero-cta hero-animate" style="--delay:.8s">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-ghost">Get In Touch</a>
         </div>
-      </section>
-      <!-- /About Section -->
-
-      <!-- Stats Section -->
-      <section id="stats" class="stats section">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Stats</h2>
-        </div>
-        <!-- End Section Title -->
-
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row gy-3 justify-content-center">
-            <div
-              class="col-lg-3 col-md-6 d-flex flex-column align-items-center"
-            >
-              <i class="bi bi-emoji-smile"></i>
-              <div class="stats-item">
-                <span
-                  data-purecounter-start="0"
-                  data-purecounter-end="20"
-                  data-purecounter-duration="1"
-                  class="purecounter"
-                ></span>
-                <p>Happy Clients</p>
-              </div>
-            </div>
-            <!-- End Stats Item -->
-
-            <div
-              class="col-lg-3 col-md-6 d-flex flex-column align-items-center"
-            >
-              <i class="bi bi-journal-richtext"></i>
-              <div class="stats-item">
-                <span
-                  data-purecounter-start="0"
-                  data-purecounter-end="30"
-                  data-purecounter-duration="1"
-                  class="purecounter"
-                ></span>
-                <p>Projects</p>
-              </div>
-            </div>
-            <!-- End Stats Item -->
-
-            <div
-              class="col-lg-3 col-md-6 d-flex flex-column align-items-center"
-            >
-              <i class="bi bi-people"></i>
-              <div class="stats-item">
-                <span
-                  data-purecounter-start="0"
-                  data-purecounter-end="30"
-                  data-purecounter-duration="1"
-                  class="purecounter"
-                ></span>
-                <p>Students Mentored</p>
-              </div>
-            </div>
-            <!-- End Stats Item -->
-          </div>
-        </div>
-      </section>
-      <!-- /Stats Section -->
-
-      <!-- Skills Section -->
-      <section id="skills" class="skills section">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Skills</h2>
-          <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
-        </div>
-        <!-- End Section Title -->
-
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row skills-content skills-animation" id="skills-list">
-            <!-- Skills will be dynamically loaded here -->
-          </div>
-        </div>
-      </section>
-      <!-- /Skills Section -->
-
-      <!-- Resume Section -->
-      <section id="resume" class="resume section">
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Resume</h2>
-        </div>
-
-        <div class="container">
-          <div class="row">
-            <!-- Left Column: Summary + Education -->
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-              <h3 class="resume-title">Summary</h3>
-              <div class="resume-item pb-0">
-                <h4>Sagun Sigdel</h4>
-                <p>
-                  <em
-                    >I am passionate about developing websites and web apps. I
-                    am web developer with knowledge of
-                    PHP, Laravel, Git, HTML, CSS, JavaScript, jQuery, Bootstrap,
-                    Tailwind, MySQL, and ORM.</em
-                  >
-                </p>
-                <ul>
-                  <li>Gandaki, Nepal</li>
-                  <li>98******41</li>
-                  <li>sag*****del6@gmail.com</li>
-                </ul>
-              </div>
-
-              <h3 class="resume-title">Education</h3>
-              <div id="education"></div>
-            </div>
-
-            <!-- Right Column: Timeline -->
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-              <h3 class="resume-title">Work Experience</h3>
-              <div id="work-experience"></div>
-            </div>
-
-            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
-              <h3 class="resume-title mt-5">Community Experience</h3>
-              <div id="community-experience"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- /Resume Section -->
-
-      <!-- Projects Section -->
-      <section id="project" class="projects section">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2 class="">Projects</h2>
-          <p>
-            A collection of my work across different industries and
-            technologies.
-          </p>
-        </div>
-        <!-- End Section Title -->
-
-        <div class="container">
-          <div
-            class="isotope-layout"
-            data-default-filter="*"
-            data-layout="masonry"
-            data-sort="original-order"
-          >
-            <ul
-              class="portfolio-filters isotope-filters"
-              id="countryFilters"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <li data-filter="*" class="filter-active">All</li>
-              <!-- Filter buttons will be dynamically loaded here -->
-            </ul>
-            <!-- End Portfolio Filters -->
-
-            <div
-              class="row gy-4 isotope-container"
-              id="projectContainer"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <!-- Project items will be dynamically loaded here -->
-            </div>
-            <!-- End Portfolio Container -->
-          </div>
-        </div>
-      </section>
-      <!-- /Projects Section -->
-
-      <!-- Contact Section -->
-      <section id="contact" class="contact section">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Contact</h2>
-          <p>
-            If you have any questions, want to collaborate, or simply want to
-            say hello, feel free to get in touch. I'd love to hear from you!
-          </p>
-        </div>
-        <!-- End Section Title -->
-
-        <div class="container" data-aos="fade" data-aos-delay="100">
-          <div class="row gy-4">
-            <div class="col-lg-4">
-              <div
-                class="info-item d-flex"
-                data-aos="fade-up"
-                data-aos-delay="200"
-              >
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Address</h3>
-                  <p>Gandaki, Nepal</p>
-                </div>
-              </div>
-              <!-- End Info Item -->
-
-              <div
-                class="info-item d-flex"
-                data-aos="fade-up"
-                data-aos-delay="400"
-              >
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email Us</h3>
-                  <p>sag*****del6@gmail.com</p>
-                </div>
-              </div>
-              <!-- End Info Item -->
-            </div>
-
-            <div class="col-lg-8">
-              <form
-                onsubmit="sendEmail(event)"
-                class="php-email-form"
-                data-aos="fade-up"
-                data-aos-delay="200"
-              >
-                <div class="row gy-4">
-                  <div class="col-md-6">
-                    <input
-                      type="text"
-                      name="name"
-                      class="form-control"
-                      id="name"
-                      placeholder="Your Name"
-                      required=""
-                    />
-                  </div>
-
-                  <div class="col-md-6">
-                    <input
-                      type="email"
-                      class="form-control"
-                      name="email"
-                      id="email"
-                      placeholder="Your Email"
-                      required=""
-                    />
-                  </div>
-
-                  <div class="col-md-12">
-                    <input
-                      type="text"
-                      class="form-control"
-                      name="subject"
-                      id="subject"
-                      placeholder="Subject"
-                      required=""
-                    />
-                  </div>
-
-                  <div class="col-md-12">
-                    <textarea
-                      class="form-control"
-                      name="message"
-                      rows="6"
-                      id="message"
-                      placeholder="Message"
-                      required=""
-                    ></textarea>
-                  </div>
-
-                  <div class="col-md-12 text-center">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">
-                      Your message has been sent. Thank you!
-                    </div>
-
-                    <button type="submit">Send Message</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <!-- End Contact Form -->
-          </div>
-        </div>
-      </section>
-      <!-- /Contact Section -->
-    </main>
-
-    <footer id="footer" class="footer position-relative light-background">
-      <div class="container">
-        <h3 class="sitename">Sagun Sigdel</h3>
-        <p>
-          I'm a passionate developer committed to creating impactful digital
-          experiences. Let's build something amazing together!
-        </p>
-        <div class="social-links d-flex justify-content-center">
-          <a href="https://github.com/sagun26" target="_blank"
-            ><i class="bi bi-github"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/sagun-sigdel" target="_blank"
-            ><i class="bi bi-linkedin"></i
-          ></a>
-          <a href="https://sagunsigdel.com.np" target="_blank"
-            ><i class="bi bi-globe"></i
-          ></a>
+        <div class="hero-social hero-animate" style="--delay:1s">
+          <a href="https://github.com/sagun26" class="social-link" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/sagun-sigdel/" class="social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          
+          <a href="#" class="social-link" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
         </div>
       </div>
-    </footer>
+      <div class="hero-visual hero-animate" style="--delay:.5s">
+        <div class="avatar-ring"></div>
+        <div class="avatar-container">
+          <div class="avatar-placeholder">
+            <img src="sagunaa.jpg" alt="sagun_profile">
+            <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="60" cy="45" r="22" fill="#A78BFA" opacity=".3"/>
+              <path d="M20 105c0-22.091 17.909-40 40-40s40 17.909 40 40" fill="#A78BFA" opacity=".2"/>
+              <circle cx="60" cy="45" r="18" fill="#A78BFA" opacity=".5"/>
+              <circle cx="60" cy="43" r="10" fill="#C4B5FD"/>
+            </svg>
+          </div>
+          <div class="avatar-badge">
+            <span>BIM</span>
+            <small>Student</small>
+          </div>
+        </div>
+        <div class="orbit orbit-1"><div class="orbit-dot"></div></div>
+        <div class="orbit orbit-2"><div class="orbit-dot"></div></div>
+      </div>
+    </section>
 
-    <!-- Scroll Top -->
-    <a
-      href="#"
-      id="scroll-top"
-      class="scroll-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
+    <!-- ═══════════ ABOUT ═══════════ -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header scroll-reveal">
+          <span class="section-label">About Me</span>
+          <h2 class="section-title">Crafting Code with <em>Purpose</em></h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text scroll-reveal slide-left">
+            <p>I'm a  BIM student with a intrest in the technology . My journey began with a curiosity about how apps work, and it's grown into a passion for building systems that make people's lives better.</p>
+            <p>When I'm not pushing commits, you'll find me reading ML papers, sketching UI conceptsat our university coding club. I believe that great software is both technically excellent and deeply empathetic.</p>
+            <div class="about-stats">
+              <div class="stat">
+                <span class="stat-number">2</span>
+                <span class="stat-label">Projects Built</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">7th</span>
+                <span class="stat-label"> semester BIM</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">4.0</span>
+                <span class="stat-label">GPA</span>
+              </div>
+            </div>
+            <a href="#" class="btn btn-primary">Download CV</a>
+          </div>
+          <div class="about-interests scroll-reveal slide-right">
+            <h3>What I'm Into</h3>
+            <div class="interest-list">
+              <div class="interest-item">
+                <div class="interest-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                </div>
+                <div>
+                  <strong>Full-Stack Development</strong>
+                  <p>Building end-to-end web applications</p>
+                </div>
+              </div>
+              <div class="interest-item">
+                <div class="interest-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                </div>
+                <div>
+                  <strong>Artificial Intelligence</strong>
+                  <p>ML models, NLP, and computer vision</p>
+                </div>
+              </div>
+              <div class="interest-item">
+                <div class="interest-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                </div>
+                <div>
+                  <strong>Open Source</strong>
+                  <p>Contributing to community-driven tools</p>
+                </div>
+              </div>
+              <div class="interest-item">
+                <div class="interest-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                </div>
+                <div>
+                  <strong>UI/UX Design</strong>
+                  <p>Human-centered design thinking</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Preloader -->
-    <div id="preloader"></div>
+    <!-- ═══════════ SKILLS ═══════════ -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="section-header scroll-reveal">
+          <span class="section-label">Skills</span>
+          <h2 class="section-title">Tools of My <em>Craft</em></h2>
+        </div>
+        <div class="skills-categories">
+          <div class="skills-group scroll-reveal" style="--stagger:0">
+            <h3 class="skills-group-title">
+              <span class="group-dot"></span>Frontend
+            </h3>
+            <div class="skill-pills">
+              <span class="pill">HTML5</span>
+              <span class="pill">CSS3</span>
+              <span class="pill pill-accent">JavaScript</span>
+              <span class="pill pill-accent">React</span>
+              <span class="pill">TypeScript</span>
+              <span class="pill">Next.js</span>
+              <span class="pill">Tailwind</span>
+              <span class="pill">Figma</span>
+            </div>
+          </div>
+          <div class="skills-group scroll-reveal" style="--stagger:1">
+            <h3 class="skills-group-title">
+              <span class="group-dot group-dot--cyan"></span>Backend
+            </h3>
+            <div class="skill-pills">
+              <span class="pill pill-cyan">Python</span>
+              <span class="pill">Node.js</span>
+              <span class="pill">Express</span>
+              <span class="pill pill-cyan">FastAPI</span>
+              <span class="pill">PostgreSQL</span>
+              <span class="pill">MongoDB</span>
+              <span class="pill">REST APIs</span>
+              <span class="pill">GraphQL</span>
+            </div>
+          </div>
+          <div class="skills-group scroll-reveal" style="--stagger:2">
+            <h3 class="skills-group-title">
+              <span class="group-dot group-dot--lavender"></span>AI & Data
+            </h3>
+            <div class="skill-pills">
+              <span class="pill">TensorFlow</span>
+              <span class="pill pill-accent">PyTorch</span>
+              <span class="pill">scikit-learn</span>
+              <span class="pill">Pandas</span>
+              <span class="pill">NumPy</span>
+              <span class="pill pill-accent">LangChain</span>
+              <span class="pill">Jupyter</span>
+            </div>
+          </div>
+          <div class="skills-group scroll-reveal" style="--stagger:3">
+            <h3 class="skills-group-title">
+              <span class="group-dot group-dot--cyan"></span>Tools & DevOps
+            </h3>
+            <div class="skill-pills">
+              <span class="pill">Git</span>
+              <span class="pill">Docker</span>
+              <span class="pill pill-cyan">GitHub Actions</span>
+              <span class="pill">AWS</span>
+              <span class="pill">Vercel</span>
+              <span class="pill">Linux</span>
+              <span class="pill">VS Code</span>
+            </div>
+          </div>
+        </div>
 
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/typed.js/typed.umd.js"></script>
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+        <div class="skill-bars scroll-reveal">
+          <h3 class="bars-title">Proficiency Levels</h3>
+          <div class="bar-list">
+            <div class="bar-item">
+              <div class="bar-label"><span>Python</span><span>92%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="92"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label"><span>JavaScript / React</span><span>88%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="88"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label"><span>Machine Learning</span><span>78%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="78"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label"><span>UI/UX Design</span><span>82%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="82"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label"><span>Data Structures & Algorithms</span><span>85%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="85"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Main JS File -->
-    <script src="assets/js/main.js"></script>
+    <!-- ═══════════ PROJECTS ═══════════ -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header scroll-reveal">
+          <span class="section-label">Projects</span>
+          <h2 class="section-title">Things I've <em>Built</em></h2>
+        </div>
+        <div class="projects-filter scroll-reveal">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="ai">AI/ML</button>
+          <button class="filter-btn" data-filter="mobile">Mobile</button>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card scroll-reveal card-stagger" data-category="ai" style="--stagger:0">
+            <div class="project-card-header">
+              <div class="project-icon">🧠</div>
+              <div class="project-links">
+                <a href="https://github.com/sagun26/local-product-store-frontend" class="project-link" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" width="16"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                <a href="https://local-product-store-frontend.vercel.app/" class="project-link" aria-label="Live"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></a>
+              </div>
+            </div>
+            <div class="project-tag">Ecommerce website</div>
+            <h3>Hamro Store</h3>
+            <p>A web-based e-commerce platform that enables local producers and artisans to sell their products online, allowing buyers to easily discover and purchase locally available goods while supporting local businesses.</p>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>javascript</span><span>React</span> <span
+              >laravel</span>
+            </div>
+          </div>
 
-    <!-- Load JSON File -->
-    <script src="assets/js/jsonLoad.js"></script>
-  </body>
+          <div class="project-card project-card--featured scroll-reveal card-stagger" data-category="web" style="--stagger:1">
+            <div class="project-card-header">
+              <div class="project-icon">✨</div>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" width="16"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                <a href="#" class="project-link" aria-label="Live"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></a>
+              </div>
+            </div>
+            <div class="project-tag">Web App</div>
+            <h3>StudyFlow</h3>
+            <p>A collaborative study platform with Pomodoro timers, AI-generated flashcards, and real-time whiteboard sessions. Used by 500+ students across 3 universities.</p>
+            <div class="project-tech">
+              <span>Next.js</span><span>TypeScript</span><span>Socket.io</span><span>OpenAI API</span>
+            </div>
+          </div>
+
+          <div class="project-card scroll-reveal card-stagger" data-category="ai" style="--stagger:2">
+            <div class="project-card-header">
+              <div class="project-icon">👁️</div>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" width="16"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                <a href="#" class="project-link" aria-label="Live"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></a>
+              </div>
+            </div>
+            <div class="project-tag">AI/ML</div>
+            <h3>VisionSort</h3>
+            <p>An image classification pipeline for medical imaging using CNNs with 94% accuracy on diabetic retinopathy detection from fundus photographs.</p>
+            <div class="project-tech">
+              <span>Python</span><span>TensorFlow</span><span>OpenCV</span><span>Flask</span>
+            </div>
+          </div>
+
+          <div class="project-card scroll-reveal card-stagger" data-category="mobile" style="--stagger:3">
+            <div class="project-card-header">
+              <div class="project-icon">🌿</div>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" width="16"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                <a href="#" class="project-link" aria-label="Live"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></a>
+              </div>
+            </div>
+            <div class="project-tag">Mobile</div>
+            <h3>MindBloom</h3>
+            <p>A mental wellness mobile app with mood tracking, guided meditations, and AI journaling prompts. Designed with accessibility at its core.</p>
+            <div class="project-tech">
+              <span>React Native</span><span>Expo</span><span>Firebase</span><span>Node.js</span>
+            </div>
+          </div>
+
+          <div class="project-card scroll-reveal card-stagger" data-category="web" style="--stagger:4">
+            <div class="project-card-header">
+              <div class="project-icon">📊</div>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" width="16"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                <a href="#" class="project-link" aria-label="Live"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></a>
+              </div>
+            </div>
+            <div class="project-tag">Web App</div>
+            <h3>CodeMetrics</h3>
+            <p>A developer analytics tool that parses GitHub repos and generates insights about code quality, commit patterns, and team productivity metrics.</p>
+            <div class="project-tech">
+              <span>React</span><span>D3.js</span><span>GitHub API</span><span>Python</span>
+            </div>
+          </div>
+
+          <div class="project-card scroll-reveal card-stagger" data-category="ai" style="--stagger:5">
+            <div class="project-card-header">
+              <div class="project-icon">💬</div>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" width="16"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                <a href="#" class="project-link" aria-label="Live"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></a>
+              </div>
+            </div>
+            <div class="project-tag">AI/ML</div>
+            <h3>LangBridge</h3>
+            <p>A multilingual chatbot using LangChain and RAG architecture that helps international students navigate university resources in their native language.</p>
+            <div class="project-tech">
+              <span>Python</span><span>LangChain</span><span>Pinecone</span><span>Streamlit</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ TIMELINE ═══════════ -->
+    <section id="timeline" class="section section-alt">
+      <div class="container">
+        <div class="section-header scroll-reveal">
+          <span class="section-label">My Journey</span>
+          <h2 class="section-title">Education & <em>Experience</em></h2>
+        </div>
+        <div class="timeline">
+           <div class="timeline-item scroll-reveal tl-left" style="--stagger:3">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <span class="tl-year">mentorship </span>
+              <h3>1 month QA  mentorship </h3>
+              <h4>Janakari tech</h4>
+              <p>.....</p>
+              <div class="tl-tags"><span>javascript</span><span>Git</span><span>TypeScript</span></div>
+            </div>
+          </div>
+           <div class="timeline-item scroll-reveal tl-right" style="--stagger:3">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <span class="tl-year">2025-2026</span>
+              <h3>HR lead </h3>
+              <h4>code for change pokhara </h4>
+              <p>Represented the organization at the college level and coordinated with members.</p>
+              <div class="tl-tags"><span>communication</span><span>problem solving </span><span>leadership</span></div>
+            </div>
+          </div>
+         
+         
+          <div class="timeline-item scroll-reveal tl-left" style="--stagger:0">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <span class="tl-year">2022 — Present</span>
+              <h3>Bachelor of Information Management </h3>
+              <h4>Kanya campus pokhara</h4>
+              <p>Developing language models for low-resource languages. Implemented a novel attention mechanism improving BLEU scores by 12% on Swahili-English translation.</p>
+               <div class="tl-tags"><span>running </span><span>SWC BIM coordinator </span><span>Lead</span></div>
+            
+              </div>
+          </div>
+          <div class="timeline-item scroll-reveal tl-right" style="--stagger:1">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <span class="tl-year">2019- 2021</span>
+              <h3>Management</h3>
+              <h4>Mount Annapurna secondary school </h4>
+              <p>Built and shipped a real-time notification system serving 2M+ users. Reduced latency by 40% through Redis caching and event-driven architecture.</p>
+             <div class="tl-tags"><span>GPA 2.4</span><span>class representative </span><span>active</span></div>
+             
+            </div>
+          </div>
+          <div class="timeline-item scroll-reveal tl-left" style="--stagger:2">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <span class="tl-year">2006 — 2019</span>
+              <h3>school</h3>
+              <h4>sagarmatha niketan school</h4>
+              <p>Specializing in Artificial Intelligence and Human-Computer Interaction. Dean's List every semester. Lead of the Women in STEM coding chapter.</p>
+              <div class="tl-tags"><span>GPA 3.4</span><span>descipline</span><span>Lead</span></div>
+            </div>
+          </div>
+         </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ CONTACT ═══════════ -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header scroll-reveal">
+          <span class="section-label">Contact</span>
+          <h2 class="section-title">Let's <em>Connect</em></h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info scroll-reveal slide-left">
+            <p class="contact-intro">I'm always open to interesting opportunities, collaborations, or just a conversation about technology and ideas. Don't hesitate to reach out!</p>
+            <div class="contact-items">
+              <a href="mailto:aria@example.com" class="contact-item">
+                <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+                <div><strong>Email</strong><p>sagunsidel6@gmail.com</p></div>
+              </a>
+              <a href="#" class="contact-item">
+                <div class="contact-icon"><svg viewBox="0 0 24 24" fill="currentColor" width="20"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></div>
+                <div><strong>LinkedIn</strong><p>linkedin.com/in/sagun-sigdel/</p></div>
+              </a>
+              <a href="#" class="contact-item">
+                <div class="contact-icon"><svg viewBox="0 0 24 24" fill="currentColor" width="20"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></div>
+                <div><strong>GitHub</strong><p>github.com/sagun26</p></div>
+              </a>
+            </div>
+          </div>
+          <form class="contact-form scroll-reveal slide-right" id="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What's this about?" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span>Send Message</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+            <div class="form-success" id="form-success">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20"><polyline points="20 6 9 17 4 12"/></svg>
+              Message sent! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">Sagun Sigdel <span>.</span></div>
+        <p class="footer-text"> I'm a passionate developer committed to creating impactful digital
+          experiences. Let's build something amazing together!
+      </p>
+        <div class="footer-links">
+          <a href="https://github.com/sagun26">GitHub</a>
+          <a href="https://www.linkedin.com/in/sagun-sigdel">LinkedIna>
+          <a href="https://sagunsigdel.com.np">Home</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <p class="footer-copy">&copy; 2026 SAGUN SIGDEL. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
